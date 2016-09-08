@@ -8,290 +8,167 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   </head>
-
-<body> 
-  <header>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid navbar-color">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">
-            <p style="font-weight: strong; color: white;"> BookBook</p>
-          </a>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input  style=" height: 25px; width: 750px; float: center;" type="text" class="form-control" placeholder="Search for users">
-          <p style=" position: absolute; right: 10%; top: 10%; font-size: 20px; color: white;"><%= @user.username%> </p>
-         </div>
-      </form>
+  <body> 
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid navbar-color">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+              <p style="font-weight: strong; color: white;"> BookBook</p>
+            </a>
+            <form class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <input  style=" height: 25px; width: 750px; float: center;" type="text" class="form-control" placeholder="Search for users">
+                <p style=" position: absolute; right: 10%; top: 10%; font-size: 20px; color: white;"> <%=@user.username%></p>
+              </div>
+            </form>
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <div class="container">
-      <div class="image">
-        <h2 style="position: absolute; bottom: 6%; right: 45%; color: white;"> Calvin Cu Lac</h2>
-        <img src="assets/1.jpg" style=" position: absolute; width: 15%; bottom: 0; left: 120px; border: 3px solid white;">
-        <img src="assets/2.jpg" style="width: 100%;">
-      </div>
-        <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">Timeline</a>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="image">
+          <h2 style="position: absolute; bottom: 6%; right: 45%; color: white;"> Calvin Cu Lac</h2>
+          <img src="assets/1.jpg" style=" position: absolute; width: 15%; bottom: 0; left: 120px; border: 3px solid white;">
+          <img src="assets/2.jpg" style="width: 100%;">
+        </div>
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Timeline</a>
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Photos</a></li>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="active"><a href="#"> Friends<span class="sr-only">(current)</span></a></li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
+  <div class="row">
+    <div class="col-sm-5">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">About</h3>
+        </div>
+        <div class="panel-body">
+          <p>Born on: Aug 33, 2999</p>
+          <p>Went to school at china</p>
+          <p>Hometown was ....</p>
+          <p>Currently lives in heaven</p>
+        </div>
+<br>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Photos (111)</h3>
+          </div>
+          <div class="panel-body">
+            <div class="col-sm-4">
+              <img src="assets/dkim.jpg" style="width: 100%;">
+              <img src="assets/dkim.jpg" style="width: 100%;">
+              <img src="assets/dkim.jpg" style="width: 100%;">
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Photos</a></li>
-              </form>
-              <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#"> Friends<span class="sr-only">(current)</span></a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
-        </nav>
+            <div class="col-sm-4">
+              <img src="assets/dkim.jpg" style="width: 100%;">
+              <img src="assets/dkim.jpg" style="width: 100%;">
+              <img src="assets/dkim.jpg" style="width: 100%;">
+            </div>
 
-<div class="row">
+            <div class="col-sm-4">
+              <img src="assets/dkim.jpg" style="width: 100%;">
+              <img src="assets/dkim.jpg" style="width: 100%;">
+              <img src="assets/dkim.jpg" style="width: 100%;">
+            </div>
 
-<div class="col-sm-5">
-  <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title">About</h3>
+          </div>
+        </div>
       </div>
-      <div class="panel-body">
-        <p>Born on: Aug 33, 2999</p>
-        <p>Went to school at china</p>
-        <p>Hometown was ....</p>
-        <p>Currently lives in heaven</p>
-      </div>
-
-<br>
-
-  <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title">Photos (111)</h3>
-      </div>
-      <div class="panel-body">
-
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Friends</h3>
+        </div>
+        <div class="panel-body">
           <div class="col-sm-4">
             <img src="assets/dkim.jpg" style="width: 100%;">
+            <p> Daniel Kim </p>
             <img src="assets/dkim.jpg" style="width: 100%;">
-            <img src="assets/dkim.jpg" style="width: 100%;">
+            <p> Daniel Kim</p>
           </div>
 
           <div class="col-sm-4">
             <img src="assets/dkim.jpg" style="width: 100%;">
+            <p> Daniel Kim </p>
             <img src="assets/dkim.jpg" style="width: 100%;">
-            <img src="assets/dkim.jpg" style="width: 100%;">
+            <p> Daniel Kim</p>
           </div>
 
           <div class="col-sm-4">
             <img src="assets/dkim.jpg" style="width: 100%;">
+            <p> Daniel Kim </p>
             <img src="assets/dkim.jpg" style="width: 100%;">
-            <img src="assets/dkim.jpg" style="width: 100%;">
+            <p> Daniel Kim</p>
           </div>
+
         </div>
       </div>
     </div>
 
-  <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title">Friends</h3>
-      </div>
-      <div class="panel-body">
-
-          <div class="col-sm-4">
-            <img src="assets/dkim.jpg" style="width: 100%;">
-            <p> Daniel Kim </p>
-            <img src="assets/dkim.jpg" style="width: 100%;">
-            <p> Daniel Kim</p>
-          </div>
-
-          <div class="col-sm-4">
-            <img src="assets/dkim.jpg" style="width: 100%;">
-            <p> Daniel Kim </p>
-            <img src="assets/dkim.jpg" style="width: 100%;">
-            <p> Daniel Kim</p>
-          </div>
-
-          <div class="col-sm-4">
-            <img src="assets/dkim.jpg" style="width: 100%;">
-            <p> Daniel Kim </p>
-            <img src="assets/dkim.jpg" style="width: 100%;">
-            <p> Daniel Kim</p>
-          </div>
+    <div class="col-sm-7">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Post</h3>
         </div>
-      </div>
-
-
-
-
-
-</div>
-
-
-
-
-
-<div class="col-sm-7">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h3 class="panel-title">Post</h3>
-    </div>
-
-    <div class="panel-body">
-      <div style="height: 50px; width: 500px;">
+      <div class="panel-body">
         <%= form_for Post.new do |post| %>
-        <%= post.text_area :body, size: "75x2"%>
+        <%= post.text_area :body , size: "65x3" %> 
+      </div>
+      <div class="panel-footer">
+        <p>
+        <%= post.submit%>
+         <% end%>
+        </p>
       </div>
     </div>
-     <div class="panel-footer">
-      <%= post.submit%>
-      <%end%>
-     </div>
-  </div>
-
-
-
-<div class="panel panel-default">
-  <div class="panel-body">
+    <% @posts.each do |post| %>
+    <div class="panel panel-default">
+      <div class="panel-body">
+        
+        <div class="row">
+          <div class="col-xs-2">
+            <img src="assets/dkim.jpg" style="width: 100%;">
+          </div>
+          <div class="col-xs-3">
+            <p><%=@user.username%></p>
+            <p><%=@user.created_at.year%>-<%=@user.created_at.month%>-<%=@user.created_at.day%></p>
+          </div>
+        </div>
     
-    <div class="row">
-      <div class="col-xs-2">
-        <img src="assets/dkim.jpg" style="width: 100%;">
+        <p>
+          <%= post.body%>
+        </p>
       </div>
-      <div class="col-xs-3">
-        <p>Daniel Kim</p>
-        <p>Posted today</p>
+
+      <div class="panel-footer">
+        <a href="" style="padding: 0 10px 0 0;">Like</a> 
+        <a href="" style="padding: 0 450px 0 0;">Comment</a>
+        <a href="">Delete</a>
       </div>
+
+    </div>
+    <%end%>
   </div>
-
-  <p>I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! </p>
-
   </div>
-  <div class="panel-footer">
-    <a href="" style="padding: 0 10px 0 0;">Like</a> 
-    <a href="" style="padding: 0 450px 0 0;">Comment</a>
-    <a href="">Delete</a>
-
-  </div>
-</div>
-
-
-<div class="panel panel-default">
-  <div class="panel-body">
-    
-    <div class="row">
-      <div class="col-xs-2">
-        <img src="assets/dkim.jpg" style="width: 100%;">
-      </div>
-      <div class="col-xs-3">
-        <p>Daniel Kim</p>
-        <p>Posted today</p>
-      </div>
-  </div>
-
-  <p>I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! </p>
-
-  </div>
-  <div class="panel-footer">
-    <a href="" style="padding: 0 10px 0 0;">Like</a> 
-    <a href="" style="padding: 0 450px 0 0;">Comment</a>
-    <a href="">Delete</a>
-
-  </div>
-</div>
-
-
-
-<div class="panel panel-default">
-  <div class="panel-body">
-    
-    <div class="row">
-      <div class="col-xs-2">
-        <img src="assets/dkim.jpg" style="width: 100%;">
-      </div>
-      <div class="col-xs-3">
-        <p>Daniel Kim</p>
-        <p>Posted today</p>
-      </div>
-  </div>
-
-  <p>I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! </p>
-
-  </div>
-  <div class="panel-footer">
-    <a href="" style="padding: 0 10px 0 0;">Like</a> 
-    <a href="" style="padding: 0 450px 0 0;">Comment</a>
-    <a href="">Delete</a>
-
-  </div>
-</div>
-
-
-<div class="panel panel-default">
-  <div class="panel-body">
-    
-    <div class="row">
-      <div class="col-xs-2">
-        <img src="assets/dkim.jpg" style="width: 100%;">
-      </div>
-      <div class="col-xs-3">
-        <p>Daniel Kim</p>
-        <p>Posted today</p>
-      </div>
-  </div>
-
-  <p>I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! </p>
-
-  </div>
-  <div class="panel-footer">
-    <a href="" style="padding: 0 10px 0 0;">Like</a> 
-    <a href="" style="padding: 0 450px 0 0;">Comment</a>
-    <a href="">Delete</a>
-
-  </div>
-</div>
-
-
-<div class="panel panel-default">
-  
-  <div class="panel-body">
-    
-    <div class="row">
-      <div class="col-xs-2">
-        <img src="assets/dkim.jpg" style="width: 100%;">
-      </div>
-      <div class="col-xs-3">
-        <p>Daniel Kim</p>
-        <p>Posted today</p>
-      </div>
-  </div>
-
-  <p>I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! </p>
-
-  </div>
-  <div class="panel-footer">
-    <a href="" style="padding: 0 10px 0 0;">Like</a> 
-    <a href="" style="padding: 0 450px 0 0;">Comment</a>
-    <a href="">Delete</a>
-
-  </div>
-
-</div>
-
-
-
-
-</div>
-</div>
+  </body>
