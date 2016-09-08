@@ -3,7 +3,7 @@
   <head>
     <title>BookBook</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="/about.css">
+    <link rel="stylesheet" type="text/css" href="assets/about.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -20,7 +20,7 @@
       <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
           <input  style=" height: 25px; width: 750px; float: center;" type="text" class="form-control" placeholder="Search for users">
-          <p style=" position: absolute; right: 10%; top: 10%; font-size: 20px; color: white;"> <%=@user.username%></p>
+          <p style=" position: absolute; right: 10%; top: 10%; font-size: 20px; color: white;"><%= @user.username%> </p>
          </div>
       </form>
         </div>
@@ -28,12 +28,12 @@
     </nav>
   </header>
 
-    <main>
+  <main>
     <div class="container">
       <div class="image">
-        <h2 style="position: absolute; bottom: 6%; right: 45%; color: white;"> <%=@user.username%> </h2>
-        <img src="/assets/1.jpg" style=" position: absolute; width: 15%; bottom: 0; left: 120px; border: 3px solid white;" >
-        <img src="/assets/2.jpg" style="width: 100%;">
+        <h2 style="position: absolute; bottom: 6%; right: 45%; color: white;"> Calvin Cu Lac</h2>
+        <img src="assets/1.jpg" style=" position: absolute; width: 15%; bottom: 0; left: 120px; border: 3px solid white;">
+        <img src="assets/2.jpg" style="width: 100%;">
       </div>
         <nav class="navbar navbar-default">
           <div class="container-fluid">
@@ -51,53 +51,247 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#"> About<span class="sr-only">(current)</span></a></li>
+                <li><a href="#">About</a></li>
                 <li><a href="#">Photos</a></li>
               </form>
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Friends</a></li>
+                <li class="active"><a href="#"> Friends<span class="sr-only">(current)</span></a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
 
-        <div class="about">
-          <h2> About </h2>
-        </div>
+<div class="row">
 
-        <div style="border: 2px solid black">
-        <div class="row">
-          <div class="col-md-4">
-            <h4> Basic Information</h4>
-            <ul>
-              <li>My birthday is on the 21st</li>
-              <li>blah blah blah blah blah</li>
-              <li>Im not too sure where i was born</li>
-              <li>Looking for girlfriend to buy me rune</li>
-            </ul>
-            <h4> Contact Info</h4>
-                        <table>
-              <tr>
-                <td style="padding: 0 60px 0 0;">Email</td>
-                <td>dzbballin</td>
-              </tr>
+<div class="col-sm-5">
+  <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">About</h3>
+      </div>
+      <div class="panel-body">
+        <p>Born on: Aug 33, 2999</p>
+        <p>Went to school at china</p>
+        <p>Hometown was ....</p>
+        <p>Currently lives in heaven</p>
+      </div>
 
-              <tr>
-                <td style="padding: 0 60px 0 0;">Telephone</td>
-                <td>403 403-4033</td>
-              </tr>
-            </table>
+<br>
 
+  <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Photos (111)</h3>
+      </div>
+      <div class="panel-body">
+
+          <div class="col-sm-4">
+            <img src="assets/dkim.jpg" style="width: 100%;">
+            <img src="assets/dkim.jpg" style="width: 100%;">
+            <img src="assets/dkim.jpg" style="width: 100%;">
           </div>
-          <div class="col-md-6 col-md-offset-2">
-            <h4> Words to Live By</h4>
-            <p> Say i-cup real quick Say i-cup real quick Say i-cup real quick Say i-cup real quick Say i-cup real quick Say i-cup real quick Say i-cup real quick </p>
+
+          <div class="col-sm-4">
+            <img src="assets/dkim.jpg" style="width: 100%;">
+            <img src="assets/dkim.jpg" style="width: 100%;">
+            <img src="assets/dkim.jpg" style="width: 100%;">
           </div>
-          <div class="col-md-6 col-md-offset-2">
-            <h4>About Me</h4>
-            <p> vape nation bro!! vape nation bro!! vape nation bro!! vape nation bro!! vape nation bro!! vape nation bro!! vape nation bro!! vape nation bro!! vape nation bro!! vape nation bro!! vape nation bro!! vape nation bro!! vape nation bro!! vape nation bro!! vape nation bro!! vape nation bro!! vape nation bro!! vape nation bro!! vape nation bro!! 
-            </p> 
+
+          <div class="col-sm-4">
+            <img src="assets/dkim.jpg" style="width: 100%;">
+            <img src="assets/dkim.jpg" style="width: 100%;">
+            <img src="assets/dkim.jpg" style="width: 100%;">
           </div>
         </div>
       </div>
-    </main>
+    </div>
+
+  <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Friends</h3>
+      </div>
+      <div class="panel-body">
+
+          <div class="col-sm-4">
+            <img src="assets/dkim.jpg" style="width: 100%;">
+            <p> Daniel Kim </p>
+            <img src="assets/dkim.jpg" style="width: 100%;">
+            <p> Daniel Kim</p>
+          </div>
+
+          <div class="col-sm-4">
+            <img src="assets/dkim.jpg" style="width: 100%;">
+            <p> Daniel Kim </p>
+            <img src="assets/dkim.jpg" style="width: 100%;">
+            <p> Daniel Kim</p>
+          </div>
+
+          <div class="col-sm-4">
+            <img src="assets/dkim.jpg" style="width: 100%;">
+            <p> Daniel Kim </p>
+            <img src="assets/dkim.jpg" style="width: 100%;">
+            <p> Daniel Kim</p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+</div>
+
+
+
+
+
+<div class="col-sm-7">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Post</h3>
+    </div>
+
+    <div class="panel-body">
+      <div style="height: 50px; width: 500px;">
+        <%= form_for Post.new do |post| %>
+        <%= post.text_area :body, size: "75x2"%>
+      </div>
+    </div>
+     <div class="panel-footer">
+      <%= post.submit%>
+      <%end%>
+     </div>
+  </div>
+
+
+
+<div class="panel panel-default">
+  <div class="panel-body">
+    
+    <div class="row">
+      <div class="col-xs-2">
+        <img src="assets/dkim.jpg" style="width: 100%;">
+      </div>
+      <div class="col-xs-3">
+        <p>Daniel Kim</p>
+        <p>Posted today</p>
+      </div>
+  </div>
+
+  <p>I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! </p>
+
+  </div>
+  <div class="panel-footer">
+    <a href="" style="padding: 0 10px 0 0;">Like</a> 
+    <a href="" style="padding: 0 450px 0 0;">Comment</a>
+    <a href="">Delete</a>
+
+  </div>
+</div>
+
+
+<div class="panel panel-default">
+  <div class="panel-body">
+    
+    <div class="row">
+      <div class="col-xs-2">
+        <img src="assets/dkim.jpg" style="width: 100%;">
+      </div>
+      <div class="col-xs-3">
+        <p>Daniel Kim</p>
+        <p>Posted today</p>
+      </div>
+  </div>
+
+  <p>I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! </p>
+
+  </div>
+  <div class="panel-footer">
+    <a href="" style="padding: 0 10px 0 0;">Like</a> 
+    <a href="" style="padding: 0 450px 0 0;">Comment</a>
+    <a href="">Delete</a>
+
+  </div>
+</div>
+
+
+
+<div class="panel panel-default">
+  <div class="panel-body">
+    
+    <div class="row">
+      <div class="col-xs-2">
+        <img src="assets/dkim.jpg" style="width: 100%;">
+      </div>
+      <div class="col-xs-3">
+        <p>Daniel Kim</p>
+        <p>Posted today</p>
+      </div>
+  </div>
+
+  <p>I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! </p>
+
+  </div>
+  <div class="panel-footer">
+    <a href="" style="padding: 0 10px 0 0;">Like</a> 
+    <a href="" style="padding: 0 450px 0 0;">Comment</a>
+    <a href="">Delete</a>
+
+  </div>
+</div>
+
+
+<div class="panel panel-default">
+  <div class="panel-body">
+    
+    <div class="row">
+      <div class="col-xs-2">
+        <img src="assets/dkim.jpg" style="width: 100%;">
+      </div>
+      <div class="col-xs-3">
+        <p>Daniel Kim</p>
+        <p>Posted today</p>
+      </div>
+  </div>
+
+  <p>I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! </p>
+
+  </div>
+  <div class="panel-footer">
+    <a href="" style="padding: 0 10px 0 0;">Like</a> 
+    <a href="" style="padding: 0 450px 0 0;">Comment</a>
+    <a href="">Delete</a>
+
+  </div>
+</div>
+
+
+<div class="panel panel-default">
+  
+  <div class="panel-body">
+    
+    <div class="row">
+      <div class="col-xs-2">
+        <img src="assets/dkim.jpg" style="width: 100%;">
+      </div>
+      <div class="col-xs-3">
+        <p>Daniel Kim</p>
+        <p>Posted today</p>
+      </div>
+  </div>
+
+  <p>I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! I'm an aspiring k-pop star! </p>
+
+  </div>
+  <div class="panel-footer">
+    <a href="" style="padding: 0 10px 0 0;">Like</a> 
+    <a href="" style="padding: 0 450px 0 0;">Comment</a>
+    <a href="">Delete</a>
+
+  </div>
+
+</div>
+
+
+
+
+</div>
+</div>
