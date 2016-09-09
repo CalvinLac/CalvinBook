@@ -1,0 +1,23 @@
+<div class="col-sm-7">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Post #<%=@post.id%></h3>
+    </div>
+    <br>
+
+      <%=@post.body%>
+
+    <br>
+    <br>
+    <br>
+    <div class="panel-footer">
+      <a href="" style="padding: 0 10px 0 0;">Like</a>
+      <%=form_for @comment do |comment| %>
+        <%= comment.text_area :body, size: "85x3" %>
+        <br>
+        <%=comment.submit %>
+      <%end%>
+      <a href="">Delete</a>
+    </div>
+  </div>
+</div>

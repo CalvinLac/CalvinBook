@@ -8,9 +8,21 @@ def create
   end
 end
 
+def show
+  @post = Post.find(params[:id])
+  @comment = Comment.new
+  @comment.post_id = @post.id
+end
+
+def update
+  @post = Post.find(params[:id])
+  if @post.update
+    redirect_to users_path
+  end
+end
 private
 def post_params
-  params.require(:post).permit(:body, :user_id, :id)
+  params.require(:post).permit(:body, :user_id, :id, :comments_attributes => [:body, :user_id, :post_id])
 end 
 
 end
