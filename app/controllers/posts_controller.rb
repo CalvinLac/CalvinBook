@@ -10,14 +10,15 @@ end
 
 def show
   @post = Post.find(params[:id])
-  @comment = Comment.new
-  @comment.post_id = @post.id
+  @comments = @post.comments
+  @new_comment = Comment.new
 end
 
 def update
   @post = Post.find(params[:id])
-  if @post.update
-    redirect_to users_path
+  @post.update(post_params)
+  if @post.save
+    redirect_to post_path(@post)
   end
 end
 private

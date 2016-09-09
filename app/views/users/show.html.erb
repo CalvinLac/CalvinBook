@@ -163,14 +163,6 @@
 
       <div class="panel-footer">
         <a href="" style="padding: 0 10px 0 0;">Like</a>
-        <%=form_for post do |p| %>
-          <%=p.fields_for :comments, Comment.new do |c| %>
-            <%= c.text_field :body %>
-            <%= c.hidden_field :post_id, value: post.id %>
-            <%= c.hidden_field :user_id, value: current_user.id %>
-          <%end%>
-          <%=p.submit%>
-        <%end%>
         <%= link_to "Comment", post_path(post) %>
         <a href="">Delete</a>
       </div>
