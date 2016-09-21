@@ -1,47 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>BookBook</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="assets/about.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-  </head>
-  <body> 
-    <header>
-      <nav class="navbar navbar-default">
-        <div class="container-fluid navbar-color">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">
-              <p style="font-weight: strong; color: white;"> BookBook</p>
-            </a>
-            <form class="navbar-form navbar-left" role="search">
-              <div class="form-group">
-                <input  style=" height: 25px; width: 750px; float: center;" type="text" class="form-control" placeholder="Search for users">
-                <p style=" position: absolute; right: 10%; top: 10%; font-size: 20px; color: white;"> <%=current_user.username%></p>
-              </div>
-            </form>
-          </div>
-        </div>
-      </nav>
-    </header>
-  </body>
-
-
 <div class="row">
   <div class="col-md-6 .col-md-offset-3">
     
   <% @users.each do |user| %>
     <%if user == current_user %>
       <%next%>
+    <% elsif current_user.friended_users.ids.include?(user.id)%>
+      <%next%> 
     <%else%>
     <div class="panel panel-default">
       <div class="panel-heading">
         <h3 class="panel-title"><%=user.username%></h3>
       </div>
       <div class="panel-body">
-      Friend this user?
+      <button type="button" class="btn btn-primary"><%=link_to "Friend User", new_friending_path(:id => user.id)%></button>
       </div>
     </div>
     <%end%>

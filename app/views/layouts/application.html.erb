@@ -14,6 +14,23 @@
   </head>
 
   <body>
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid navbar-color">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+              <p style="font-weight: strong; color: white;"> BookBook</p>
+            </a>
+            <form class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <input  style=" height: 25px; width: 750px; float: center;" type="text" class="form-control" placeholder="Search for users">
+                <p style=" position: absolute; right: 10%; top: 10%; font-size: 20px; color: white;"> <%=current_user.username%></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
     <%= yield %>
   </body>
 </html>
