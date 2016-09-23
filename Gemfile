@@ -21,6 +21,8 @@ gem 'coffee-rails', '~> 4.2'
 # gem 'therubyracer', platforms: :ruby
 gem 'hirb'
 gem 'paperclip'
+gem 'paperclip-meta'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 gem 'devise'

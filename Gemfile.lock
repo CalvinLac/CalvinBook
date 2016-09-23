@@ -101,6 +101,8 @@ GEM
       cocaine (~> 0.5.5)
       mime-types
       mimemagic (~> 0.3.0)
+    paperclip-meta (0.4.3)
+      paperclip
     pkg-config (1.1.7)
     puma (3.6.0)
     rack (2.0.1)
@@ -188,6 +190,7 @@ DEPENDENCIES
   jquery-rails
   listen (~> 3.0.5)
   paperclip
+  paperclip-meta
   puma (~> 3.0)
   rails (~> 5.0.0, >= 5.0.0.1)
   rb-fsevent (<= 0.9.4)
