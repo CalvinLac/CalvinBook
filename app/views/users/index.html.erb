@@ -89,7 +89,10 @@
                 <br>
                 <%= user_fields.label :password_confirmation %>
                 <%= user_fields.text_field :password_confirmation %>
-                <br>  
+                <br>
+                <%= user_fields.label :avatar %>
+                <%= user_fields.file_field :avatar %>
+                <br>
                 <%= user_fields.submit %>
                 <%end%>
               </td>

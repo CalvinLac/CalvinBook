@@ -10,14 +10,14 @@ class UsersController < ApplicationController
     if @user.save
       redirect_to users_path
     else
-      rerender :new
+      redirect_to :back
     end
 
-    if @comment.save
-      redirect_to users_path
-    else
-      rerender :new
-    end
+    # if @comment.save
+    #   redirect_to users_path
+    # else
+    #   render :index
+    # end
   end
 
   def show 
@@ -31,6 +31,6 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:username, :password, :email, :id, :password_confirmation, :comments => (:body))
+    params.require(:user).permit(:username, :password, :email, :id, :password_confirmation, :avatar, :comments => (:body))
   end
 end
