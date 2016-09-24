@@ -1,5 +1,10 @@
-
-
-<% @matched_users.each do |users| %>
-<%= users.username%> 
+<% @matched_users.each do |user| %>
+  <div class="col-sm-7">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%=user.username%></h3>
+        <%=image_tag user.avatar.url%>
+      </div>
+    </div>
+  </div>
 <%end%>
